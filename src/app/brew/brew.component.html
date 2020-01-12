@@ -1,0 +1,10 @@
+<h1>Breweries</h1>
+
+<ul *ngIf="datas">
+  <li *ngFor="let data of datas">
+    <p class="name">{{data.name}}</p>
+    <p class="full"><span class="first-word">750ml rate: </span><span>₹</span> {{data.full}} </p> 
+    <p class="half"><span class="first-word">375ml rate:</span> <span>₹</span> {{data.half}} </p>  
+    <p class="quarter"><span class="first-word">180ml rate: </span><span>₹</span> {{data.quarter}} </p>
+  </li>
+</ul>
